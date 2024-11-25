@@ -79,6 +79,10 @@ func (d *Dota2) Close() {
 	d.connectionCtxMtx.Unlock()
 }
 
+func (d *Dota2) State() state.Dota2State {
+	return d.state
+}
+
 // buildHandlerMap builds the map of bound handler functions.
 func (d *Dota2) buildHandlerMap() {
 	d.handlers = handlerMap{
