@@ -2,7 +2,7 @@ package socache
 
 import (
 	"github.com/golang/protobuf/proto"
-	"github.com/paralin/go-dota2/cso"
+	"github.com/genji1037/go-dota2/cso"
 )
 
 // EventType marks the type of event this is.

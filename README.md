@@ -47,8 +47,8 @@ This mechanism is used everywhere, these objects are not exposed in their own ev
 
 ```go
 import (
-	gcmm "github.com/paralin/go-dota2/protocol"
-	"github.com/paralin/go-dota2/cso"
+	gcmm "github.com/genji1037/go-dota2/protocol"
+	"github.com/genji1037/go-dota2/cso"
 )
 
 eventCh, eventCancel, err := dota.GetCache().SubscribeType(cso.Lobby)

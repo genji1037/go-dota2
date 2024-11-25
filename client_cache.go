@@ -2,8 +2,8 @@ package dota2
 
 import (
 	"github.com/paralin/go-steam/protocol/gamecoordinator"
-	gcsdkm "github.com/paralin/go-dota2/protocol"
-	gcsm "github.com/paralin/go-dota2/protocol"
+	gcsdkm "github.com/genji1037/go-dota2/protocol"
+	gcsm "github.com/genji1037/go-dota2/protocol"
 )
 
 // RequestCacheSubscriptionRefresh requests a subscription refresh for a specific cache ID.

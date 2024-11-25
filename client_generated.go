@@ -2,8 +2,8 @@ package dota2
 
 import (
 	"context"
-	"github.com/paralin/go-dota2/events"
-	"github.com/paralin/go-dota2/protocol"
+	"github.com/genji1037/go-dota2/events"
+	"github.com/genji1037/go-dota2/protocol"
 	"github.com/paralin/go-steam/steamid"
 )
 

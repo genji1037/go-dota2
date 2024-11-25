@@ -8,8 +8,8 @@ import (
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 
-	"github.com/paralin/go-dota2/cso"
-	gcsdkm "github.com/paralin/go-dota2/protocol"
+	"github.com/genji1037/go-dota2/cso"
+	gcsdkm "github.com/genji1037/go-dota2/protocol"
 )
 
 // SOCacheContainer contains a type of object in the cache.

@@ -3,11 +3,11 @@ package dota2
 import (
 	"context"
 
+	devents "github.com/genji1037/go-dota2/events"
+	gcsdkm "github.com/genji1037/go-dota2/protocol"
+	gcsm "github.com/genji1037/go-dota2/protocol"
+	"github.com/genji1037/go-dota2/state"
 	"github.com/paralin/go-steam/protocol/gamecoordinator"
-	devents "github.com/paralin/go-dota2/events"
-	gcsdkm "github.com/paralin/go-dota2/protocol"
-	gcsm "github.com/paralin/go-dota2/protocol"
-	"github.com/paralin/go-dota2/state"
 )
 
 // SetPlaying informs Steam we are playing / not playing Dota 2.
@@ -35,6 +35,10 @@ func (d *Dota2) SayHello(haveCacheVersions ...*gcsdkm.CMsgSOCacheHaveVersion) {
 		ClientSessionNeed:   &clientSessionNeed,
 		SocacheHaveVersions: haveCacheVersions,
 	})
+}
+
+func (d *Dota2) ValidateConnectionContext() (context.Context, error) {
+	return d.validateConnectionContext()
 }
 
 // validateConnectionContext checks if the client is ready or not.
